@@ -1,0 +1,63 @@
+site_name: Mkdocs test - Doc Site
+site_url: https://krdileep.github.io/mkdocs-test/
+
+site_description: >-
+  Sample test mkdocs
+# Repository
+repo_name: krdileep/mkdocs-test
+repo_url: https://github.com/krdileep/mkdocs-test/
+edit_uri: ""
+
+# Configuration
+theme:
+  name: material
+  theme_dir: material
+  font:
+    text: IBM Plex Sans
+    code: IBM Plex Mono
+  # 404 page
+  static_templates:
+    # Don't include MkDocs' JavaScript
+  include_search_page: false
+  search_index_only: true
+  language: en
+  features:
+    # - navigation.instant
+    # - navigation.sections
+  favicon: 
+  icon:
+    logo: logo
+  palette:
+    scheme: slate
+    primary: teal
+    accent: amber
+# Plugins
+plugins:
+  - search
+  - git-revision-date
+extra_css:
+extra_javascript:
+
+markdown_extensions:
+  - admonition
+  - abbr
+  - attr_list
+  - def_list
+  - footnotes
+  - meta
+  - md_in_html
+
+nav:
+  - Home:
+  - Learning Corner:
+  - Onboarding & Deploy :
+    - Onboarding Solution:
+    - Deployment:
+    - Post-deployment:
+    - Upgrades:
+    - Operational Processes:
+  - Architecture:
+    - IaC:
+    - Security:
+    - Misc:
+  - About: 
